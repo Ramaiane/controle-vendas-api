@@ -1,0 +1,9 @@
+version: '3'
+services:
+  colaboradores-service:
+    ports:
+      - 8080:8080
+    build:
+      context: .
+      args:
+        JAR_FILE: target/controle-vendas-api-*.jar
